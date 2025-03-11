@@ -18,36 +18,36 @@ This platform is designed to generate values for Kubernetes projects. It helps i
 
 ### Usage
 
-To run the [main.go](http://_vscodecontentref_/1) file and generate the values file:
+To run the `main.go` file and generate the values file:
 
-1. Navigate to the [cmd](http://_vscodecontentref_/2) directory:
+1. Navigate to the `cmd` directory:
     ```sh
     cd cmd
     ```
 
-2. Run the [main.go](http://_vscodecontentref_/3) file:
+2. Run the `main.go` file:
     ```sh
     go run main.go
     ```
 
-This will create or overwrite a file named [val_back.yaml](http://_vscodecontentref_/4) with the generated values.
+This will create or overwrite a file named `val_back.yaml` with the generated values.
 
 ### Project Structure
 
-- [main.go](http://_vscodecontentref_/5): The main entry point of the application.
-- [values.go](http://_vscodecontentref_/6): Contains the `MakeValues` function to generate values for Kubernetes resources.
+- `main.go`: The main entry point of the application.
+- `values.go`: Contains the `MakeValues` function to generate values for Kubernetes resources.
 
 ### Example
 
-The [main.go](http://_vscodecontentref_/7) file generates a YAML file with the following values:
+The `main.go` file generates a YAML file with the following values:
 
-- [replicas](http://_vscodecontentref_/8): 1
-- [repository](http://_vscodecontentref_/9): `docker.io/redis`
-- [tag](http://_vscodecontentref_/10): `latest`
-- [pullPolicy](http://_vscodecontentref_/11): `IfNotPresent`
-- [containerPort](http://_vscodecontentref_/12): 6379
-- [serviceType](http://_vscodecontentref_/13): `ClusterIP`
-- [port](http://_vscodecontentref_/14): 6379
-- [targetPort](http://_vscodecontentref_/15): 6379
+- `replicas`: 1
+- `repository`: `docker.io/redis`
+- `tag`: `latest`
+- `pullPolicy`: `IfNotPresent`
+- `containerPort`: 6379
+- `serviceType`: `ClusterIP`
+- `port`: 6379
+- `targetPort`: 6379
 
-The generated file will be named [val_back.yaml](http://_vscodecontentref_/16).
+The generated file will be named `val_back.yaml`.
